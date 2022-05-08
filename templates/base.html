@@ -1,0 +1,32 @@
+
+{% load static %}
+
+<html>
+    <head>
+        <title>My Project</title>
+
+    {% include 'partial/_head.html' %}
+
+    </head>
+
+    {% include 'partial/_header.html' %}
+
+    <body>
+        
+    {% block content %}
+
+    
+         <!-- ALL JS FILES -->
+         <script src="{% static 'js/all.js' %}"></script>
+         <!-- ALL PLUGINS -->
+         <script src="{% static 'js/custom.js' %}"></script>
+
+    {% endblock content %}
+
+    </body>
+
+    {% block footer %}
+    {% endblock footer %}
+
+
+</html>
