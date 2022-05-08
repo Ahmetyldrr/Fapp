@@ -1,12 +1,12 @@
 from tempfile import template
 from django.urls import path
-from .views import homepage,team
+from .views import homepage
 
 
 
 urlpatterns = [
    
     path('',homepage,name='homepage'),
-    path('team',team,name='team')
+   
       
 ]
