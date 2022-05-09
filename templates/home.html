@@ -1,11 +1,24 @@
 
-{% extends 'base.html' %}
 
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 
-{% include 'partial/containers.html' %}
-{% include 'partial/basic.html' %}
+    <a class="btn btn-primary" href="{% url 'newpage' %}" class="href">Anasafaya Geri Don</a>
 
-{% endblock  %}
-
+    <div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-secondary">Left</button>
+   
+    </div>
+    
+    
+    <h1>Burası anasayfadır.</h1>
+</body>
+</html>
 
